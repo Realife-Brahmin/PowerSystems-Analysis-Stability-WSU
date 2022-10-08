@@ -1,0 +1,4 @@
+ieee300cdf.txt:
+One Branch (Line 687, i = 204, j = 2040) has a missing element (presumably = 0). Inserted that in ieee300cdf.txt, leaving the original txt file with the name ieee300cdf_old.txt
+cdf.txt says wrong. Bus Name actually starts from column 6, NOT column 7.
+  
