@@ -9,5 +9,7 @@
 
 ### Yet to implement:
 - LU Factorization and Backward-Foward Substitution
+- [OPTIONAL] Decoupled Power Flow
 - Fast Decoupled NR
 - [OPTIONAL] Bus Changing (PV to PQ)
+- [OPTIONAL] DC Power Flow
