@@ -8,8 +8,6 @@
 - $N$ bus systems with individual bus numbers $i$ outside the range of natural numbers from $[1, N]$  are currently NOT supported. The `ieee300` bus system is one such system.
 
 ### Yet to implement:
-- LU Factorization and Backward-Foward Substitution
-- [OPTIONAL] Decoupled Power Flow
-- Fast Decoupled NR
+- Fast Decoupled NRPF
 - [OPTIONAL] Bus Changing (PV to PQ)
 - [OPTIONAL] DC Power Flow
