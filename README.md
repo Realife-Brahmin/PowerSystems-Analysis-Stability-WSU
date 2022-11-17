@@ -4,8 +4,13 @@
 
 - Make sure to set MATLAB's working directory as the location of ee521_powerFlow.mlx
 - Currently the NRPF algorithm does NOT support bus type conversion. This obviously affects convergence for bigger bus systems, but fortunately does not seem to affect the `ieee14` and `ieee30` bus systems.
-- Currently it converges for the `ieee14` and `ieee30` bus systems, has trouble with `ieee57` bus system for a couple of buses and blows up for the `ieee118` bus system. I have added another small 3 bus system which I am calling `koth3` (from Kothari and Nagrath's Modern Power System Analysis) for sanity checks, which converges. 
+- Currently it converges for the `ieee14` and `ieee30` bus systems, has trouble with `ieee57` bus system for a couple of buses and blows up for the `ieee118` bus system.
 - $N$ bus systems with individual bus numbers $i$ outside the range of natural numbers from $[1, N]$  are currently NOT supported. The `ieee300` bus system is one such system.
+
+### Textbook solved examples added:
+- `koth3`: A 3 bus system from Kothari and Nagrath's Modern Power System Analysis.
+- `crow3`: The 3 bus system in Example 5.9 from Mariesa L Crow's Computational Methods for Electric Power Systems. 
+
 
 ### Yet to implement:
 - [OPTIONAL] Bus Changing (PV to PQ)
