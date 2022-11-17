@@ -14,7 +14,7 @@
 
 ### Linear System Solving Algorithms added:
 - `LU Factorization`
-- 
+
 ### Textbook solved examples added:
 - `koth3`: A 3 bus system from Kothari and Nagrath's Modern Power System Analysis.
 - `crow3`: The 3 bus system in Example 5.9 from Mariesa L Crow's Computational Methods for Electric Power Systems. 
