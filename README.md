@@ -7,6 +7,14 @@
 - Currently it converges for the `ieee14` and `ieee30` bus systems, has trouble with `ieee57` bus system for a couple of buses and blows up for the `ieee118` bus system.
 - $N$ bus systems with individual bus numbers $i$ outside the range of natural numbers from $[1, N]$  are currently NOT supported. The `ieee300` bus system is one such system.
 
+### Power Flow Algorithms added:
+- Newton Raphson Power Flow `NRPF`
+- `Decoupled NRPF`
+- `Fast Decoupled NRPF`
+
+### Linear System Solving Algorithms added:
+- `LU Factorization`
+- 
 ### Textbook solved examples added:
 - `koth3`: A 3 bus system from Kothari and Nagrath's Modern Power System Analysis.
 - `crow3`: The 3 bus system in Example 5.9 from Mariesa L Crow's Computational Methods for Electric Power Systems. 
