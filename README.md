@@ -1,4 +1,4 @@
-# EE 521: Power System Analysis
+# EE 521: Analysis of Power Systems
 ## Fall 2022 | Noel Schulz
 ### MATLAB implementations for the Power System Analysis course (EE 521) at WSU.
 
