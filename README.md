@@ -21,7 +21,7 @@
 
 ### Data Strucutures and Algorithms Sparsified:
 - `YBus`
-- Jacobian `J`.
+- Jacobian `J`
 - Computation of [P Q] Mismatches `[\Delta P \Delta Q]`.
 - `sparmat` and `sparvec` can convert matrices and vectors in compressed format `(nrow, ncol, val)` or `(nIndex, val)` into the sparse format `[nnz, N]`. All data structures are tables.
 
