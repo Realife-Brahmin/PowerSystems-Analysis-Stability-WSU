@@ -22,11 +22,9 @@
 ### Data Strucutures and Algorithms Sparsified:
 - `YBus`
 - Jacobian `J`
-- Computation of [P Q] Mismatches $[\Delta P \Delta Q]$.
+- Computation of Mismatches $[\Delta P ;\Delta Q]$.
 - `sparmat` and `sparvec` can convert matrices and vectors in compressed format `(nrow, ncol, val)` or `(nIndex, val)` into the sparse format `[nnz, N]`. All data structures are tables.
 
 ### Yet to implement:
 - [OPTIONAL] Bus Changing (PV to PQ)
 - [OPTIONAL] DC Power Flow
-- $asdf = 5$
-- $$asdfasdf 214$
