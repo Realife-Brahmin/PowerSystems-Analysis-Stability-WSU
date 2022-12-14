@@ -20,9 +20,10 @@
 - `crow3`: The 3 bus system in Example 5.9 from Mariesa L Crow's Computational Methods for Electric Power Systems. 
 
 ### Data Strucutures and Algorithms Sparsified:
-- YBus
-- Jacobian.
-- Computation of [P Q] Mismatches.
+- `YBus`
+- Jacobian `J`.
+- Computation of [P Q] Mismatches `[\Delta P \Delta Q]`.
+- `sparmat` and `sparvec` can convert matrices and vectors in compressed format `(nrow, ncol, val)` or `(nIndex, val)` into the sparse format `[nnz, N]`. All data structures are tables.
 
 ### Yet to implement:
 - [OPTIONAL] Bus Changing (PV to PQ)
