@@ -18,7 +18,7 @@
 ### Textbook solved examples added:
 - `koth3`: A 3 bus system from Kothari and Nagrath's Modern Power System Analysis.
 - `crow3`: The 3 bus system in Example 5.9 from Mariesa L Crow's Computational Methods for Electric Power Systems. 
-
+- `ieee11`: Kundur's 2 Area 11 bus system as given in Example 12.6, Pg 813 of Power System Stability and Control by Prabha Kundur.
 ### Data Strucutures and Algorithms Sparsified:
 - `YBus`
 - Jacobian `J`
