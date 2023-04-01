@@ -11,6 +11,7 @@
 - Newton Raphson Power Flow `NRPF`
 - `Decoupled NRPF`
 - `Fast Decoupled NRPF`
+- `Continuation Power Flow`
 
 ### Linear System Solving Algorithms added:
 - `LU Factorization`
