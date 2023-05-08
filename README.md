@@ -26,6 +26,20 @@
 - Computation of Mismatches $[\Delta P ;\Delta Q]$.
 - `sparmat` and `sparvec` can convert matrices and vectors in compressed format `(nrow, ncol, val)` or `(nIndex, val)` into the sparse format `[nnz, N]`. All data structures are tables.
 
+## Stability and Control Scripts for the Kundur 4 Machine 2 Area System:
+| Model Type      | Dynamic Initialization | Small Signal Stability Analysis   | Transient Stability Analysis |
+| :---        |    :----:   |          :---: | :---: |
+| Type 3 aka Classical Model      | ✅       | ✅   | ✅ |
+| Type 2 with AVR and Governor   | ✅        | 🟨      | 🟨 |
+| Type 1 with AVR and Governor | ✅ | ✅ | 🔴 | 
+
+Legend:
+| Symbol | Remark |
+| :---: | :--- |
+| ✅ | Implemented and performing as expected |
+| 🟨 | Implemented but NOT performing as expected |
+| 🔴 | NOT implemented |
+
 ### Yet to implement:
 - Sparse LU Factorization
 - [OPTIONAL] Bus Changing (PV to PQ)
