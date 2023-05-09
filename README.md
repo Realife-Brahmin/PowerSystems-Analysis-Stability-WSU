@@ -1,6 +1,6 @@
 # EE 521: Analysis of Power Systems and EE 523: Power System Stability and Control
 ## Fall 2022 | Noel Schulz and Spring 2023 | Mani V. Venkatasubramanian 
-<img src = "https://user-images.githubusercontent.com/24756405/237026269-1a4b282d-0c85-4ea7-b49d-7f0ac7773e45.png" width = 10% height = 10%>
+<img src = "https://user-images.githubusercontent.com/24756405/237028282-16ffc864-98f8-4c6f-a663-dfb04d191623.png" width = 10% height = 10%>
 
 ### MATLAB implementations for the two courses at Washington State University, Pullman.
 
