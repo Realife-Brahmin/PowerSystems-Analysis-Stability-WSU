@@ -1,6 +1,7 @@
 # EE 521: Analysis of Power Systems and EE 523: Power System Stability and Control
 ## Fall 2022 | Noel Schulz and Spring 2023 | Mani V. Venkatasubramanian 
-<img src = "https://user-images.githubusercontent.com/24756405/237028282-16ffc864-98f8-4c6f-a663-dfb04d191623.png" width = 10% height = 10%>
+ <img src = "https://user-images.githubusercontent.com/24756405/237030072-5b15d383-9fec-4af8-bf5d-572b6db31e37.png" width = 40% height = 50%>
+
 
 ### MATLAB implementations for the two courses at Washington State University, Pullman.
 
@@ -46,3 +47,5 @@ Legend:
 - Currently the NRPF algorithm does NOT support bus type conversion. This obviously affects convergence for bigger bus systems, but fortunately does not seem to affect the `ieee14` and `ieee30` bus systems.
 - Currently it converges for the `ieee14` and `ieee30` bus systems, has trouble with `ieee57` bus system for a couple of buses and blows up for the `ieee118` bus system.
 - $N$ bus systems with individual bus numbers $i$ outside the range of natural numbers from $[1, N]$  are currently NOT supported. The `ieee300` bus system is one such system.
+
+<img src = "https://user-images.githubusercontent.com/24756405/237028282-16ffc864-98f8-4c6f-a663-dfb04d191623.png" width = 15% height = 15%>
