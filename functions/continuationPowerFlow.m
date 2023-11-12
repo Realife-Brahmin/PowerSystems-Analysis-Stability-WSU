@@ -8,7 +8,7 @@ function [V_CPF, delta_CPF, lambda_CPF, iter_CPF, sigma_CPF] =...
 
     CPFItrMax = 100;
     sectionItrMax = 12;
-    
+    verbose = false;
     sigma1 = 0.1;
     sigma2 = 0.005;
     sigma3 = 0.1;
@@ -81,6 +81,7 @@ function [V_CPF, delta_CPF, lambda_CPF, iter_CPF, sigma_CPF] =...
         V_Initial = V;
         delta_Initial = delta;
         
+        % itr = 1;
         while err > eps
 
             P = zeros(N, 1);
@@ -104,13 +105,13 @@ function [V_CPF, delta_CPF, lambda_CPF, iter_CPF, sigma_CPF] =...
 
             if Section == 1 || Section == 3
                 deltaPQ = cat(1, deltaP, deltaQ);
-                mismatch = solveUsingLU(J_LF, deltaPQ);
+                mismatch = solveUsingLU(J_LF, deltaPQ, iter, verbose);
 
             elseif Section == 2
                 del_V_new = V_CPF_bus_Initial - V(CPF_Bus);
                 deltaP_Q_V = [deltaP; deltaQ; del_V_new];
                 J_LF_New = [[-J_LF, K]; ek];
-                mismatch = -solveUsingLU(J_LF_New, deltaP_Q_V);
+                mismatch = -solveUsingLU(J_LF_New, deltaP_Q_V, iter, verbose);
                 lambda = lambda + mismatch(end);
 
             end
