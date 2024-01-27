@@ -68,7 +68,7 @@ function [P, Q, V, delta, J11] = solveForPowerFlow(PSpecified, QSpecified, ...
                 J11Table %#ok<NOPRT> 
             end
     
-            correctionDelta = solveUsingLU(J11, PMismatch, nPQ+nPV);
+            correctionDelta = solveUsingLU(J11, PMismatch, itr, displayLUFactors);
         
             delta = [delta(1); delta(listOfNonSlackBuses) + correctionDelta];
 
@@ -91,7 +91,7 @@ function [P, Q, V, delta, J11] = solveForPowerFlow(PSpecified, QSpecified, ...
                 J22Table %#ok<NOPRT> 
             end
     
-            correctionDeltaVByV = solveUsingLU(J22, QMismatch, nPQ);
+            correctionDeltaVByV = solveUsingLU(J22, QMismatch, itr, displayLUFactors);
         
             V(listOfPQBuses) = V(listOfPQBuses).*( ones(nPQ, 1) + correctionDeltaVByV );
 
