@@ -1,5 +1,9 @@
 {
-	"folders": [],
+	"folders": [
+		{
+			"path": "."
+		}
+	],
 	"settings": {
 		"workbench.colorTheme": "Bearded Theme Aquarelle Lilac"
 	}
