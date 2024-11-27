@@ -19,7 +19,8 @@ clearVariables(clearVars);
 
 % systemName = "PhD-QE-CaseA-3"
 % systemName = "ieee14"
-systemName = "anamika3A"
+% systemName = "anamika3A"
+systemName = "anamika3B"
 powerFlowMethod =  "NRPF" 
 % powerFlowMethod =  "Decoupled NRPF"
 % powerFlowMethod =  "Fast Decoupled NRPF"
