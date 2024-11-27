@@ -16,15 +16,16 @@ end
 addDirectories;
 
 clearVariables(clearVars);
-systemName = "ieee14"
+
+systemName = "PhD-QE-CaseA-3"
 powerFlowMethod =  "NRPF" 
 doContinuationPowerFlow = false;
-displayCPFResults = false;
-plotCPFPlots = false;
-CPF_Bus = 7;
+displayCPFResults = true;
+plotCPFPlots = true;
+CPF_Bus = 4;
 useSparseDSA = false;
 includeOPFScenarios = false;
-showOPFFormulae = true;
+showOPFFormulae = false;
 showOPFValues = false;
 numIterations = 50; %I don't wait for the system to converge, 
 printPowerFlowConvergenceMessages = false;
@@ -32,7 +33,7 @@ printPowerFlowConvergenceMessages = false;
 toleranceLimit = 1e-3; %mean of absolute values of 
 % corrections should be less than this for convergence to be achieved.
 displayRawData = false;
-displayYBus = false;
+displayYBus = true;
 displayTables = true; %show busData, branchData, ybus, 
 % basically data structures which are not the final output.
 printJacobians = true  ; %Print Jacobians during NRPF iterations? Does not work if displayTables is off.
@@ -40,10 +41,11 @@ displayLUFactors = true;
 printMismatches = true; %Print Mismatches during NRPF iterations? Does not work if displayTables is off.
 printCorrections = true;
 disableTaps = false; %Disable Tap-changers when commputing YBus?
-showPlots = true;
+showPlots = false;
+% showPlots = true;
 displayResults = true;
 reducedBranchColumnsCDFReading = true; 
-saveBusDataAndBranchData = true;
+saveBusDataAndBranchData = false;
 showImages = true; %might add iteration specific images later. 
 verboseCDFReading = false; %Will give a verbose output when reading CDF files.
 MVAb = 100; %Currently the same for all systems in database.
