@@ -17,8 +17,12 @@ addDirectories;
 
 clearVariables(clearVars);
 
-systemName = "PhD-QE-CaseA-3"
+% systemName = "PhD-QE-CaseA-3"
+% systemName = "ieee14"
+systemName = "anamika3A"
 powerFlowMethod =  "NRPF" 
+% powerFlowMethod =  "Decoupled NRPF"
+% powerFlowMethod =  "Fast Decoupled NRPF"
 doContinuationPowerFlow = false;
 displayCPFResults = true;
 plotCPFPlots = true;
